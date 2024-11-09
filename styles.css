@@ -1,0 +1,205 @@
+/* Estilos Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Fuentes y colores */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f0f0f0;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Colores Personalizados */
+:root {
+  --enfasis: #023E73;
+  --botones: #0487D9;
+  --marcos: #F2D544;
+  --entradas: #D9AA52;
+  --eliminar: #FF0202;
+  --actualizar: #51A402;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--enfasis);
+  color: white;
+  padding: 1rem 2rem;
+}
+
+.navbar .logo h1 {
+  font-size: 2rem;
+}
+
+.navbar nav a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: color 0.3s;
+}
+
+.navbar nav a:hover {
+  color: var(--marcos);
+}
+
+/* Hero */
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, var(--botones), #ff9a00);
+  color: white;
+  text-align: center;
+  padding: 0 1rem;
+}
+
+.hero h2 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero-buttons .btn {
+  margin: 10px;
+}
+
+.hero-buttons .btn:hover {
+  transform: scale(1.05);
+}
+
+/* Funciones */
+.funciones {
+  padding: 3rem 2rem;
+  background-color: #fff;
+  text-align: center;
+}
+
+.funciones-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.funcion-card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s;
+}
+
+.funcion-card:hover {
+  transform: translateY(-10px);
+}
+
+.funcion-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.funcion-info {
+  padding: 20px;
+}
+
+.funcion-info h3 {
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+}
+
+.funcion-info p {
+  font-size: 1rem;
+}
+
+/* Precio */
+.precio {
+  background-color: #f4f4f4;
+  padding: 3rem 1rem;
+  text-align: center;
+}
+
+.plan-card {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.plan-card h3 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.precio-numero {
+  font-size: 2.5rem;
+  color: var(--botones);
+  font-weight: bold;
+}
+
+.plan-card .btn {
+  background-color: var(--botones);
+  color: white;
+  padding: 12px 30px;
+  margin-top: 20px;
+  font-size: 1.2rem;
+  border-radius: 50px;
+}
+
+.plan-card .btn:hover {
+  transform: scale(1.05);
+}
+
+/* Portafolio */
+.portafolio {
+  background-color: #fff;
+  padding: 3rem 2rem;
+  text-align: center;
+}
+
+.portafolio-btn {
+  display: inline-block;
+  padding: 10px 30px;
+  background-color: var(--botones);
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+  border-radius: 50px;
+  transition: background-color 0.3s;
+}
+
+.portafolio-btn:hover {
+  background-color: #ff9a00;
+}
+
+/* Desarrollador */
+.desarrollador {
+  padding: 3rem 2rem;
+  text-align: center;
+  background-color: #fff;
+}
+
+.tec-logo-container {
+  margin-top: 2rem;
+}
+
+.logo-tec {
+  max-width: 100px;
+  margin-top: 10px;
+}
+
+/* Footer */
+footer {
+  background-color: var(--enfasis);
+  color: white;
+  text-align: center;
+  padding: 1rem 0;
+}
